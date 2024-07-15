@@ -5,9 +5,9 @@ Console.WriteLine("--------------------------------------------");
 Console.WriteLine();
 
 
-void MooseSays()
+void MooseSays(string message)
 {
-    Console.WriteLine(@"
+    Console.WriteLine($@"
                                        _.--^^^--,
                                     .'          `\
   .-^^^^^^-.                      .'              |
@@ -24,7 +24,7 @@ void MooseSays()
                '-'    | /       \ |
                       |  .-. .-.  |
                       \ / o| |o \ /
-                       |   / \   |    H I, I'M  E N T H U S I A S T I C !
+                       |   / \   |    {message}
                       / `^`   `^` \
                      /             \
                     | '._.'         \
@@ -37,4 +37,5 @@ void MooseSays()
     ");
 }
 
-MooseSays();
+MooseSays("H I, I'M E N T H U S I A S T I C !");
+MooseSays("I really am enthusiastic");
